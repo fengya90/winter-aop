@@ -13,3 +13,15 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+.vscode/*
+example/example
+wacli/wacli
+*_winter_aop_gen.go
+*~
+.DS_Store
+.idea
+*.class
+*.iml
+example/quickstart/quickstart
+example/tutorial/tutorial

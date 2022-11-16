@@ -1,20 +1,3 @@
-# winter-aop
-
-winter-aop is a Golang AOP library.
-
-## Quick Start
-
-1. Install command line tools
-
-```shell
-~ go install github.com/fengya90/winter-aop/wacli@latest
-~ wacli
-please run: wacli -h
-```
-
-2. source code
-
-```go
 //go:build !winter_aop
 // +build !winter_aop
 
@@ -50,30 +33,3 @@ func Say(msg string) {
 func main() {
 	Say("hello")
 }
-
-```
-
-3. compile and run
-
-```
-~ tree quickstart
-quickstart
-└── main.go
-~ wacli gen -d quickstart
-generate quickstart/main_winter_aop_gen.go
-~ tree quickstart
-quickstart
-├── main.go
-└── main_winter_aop_gen.go
-~ cd quickstart
-~  ./quickstart
-start:say
-hello
-finish:say
-```
-
-
-## Document
-
-see [documents](doc)
-
